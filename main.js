@@ -30,7 +30,8 @@ window.addEventListener('resize', () => {
 // Moon
 const RADIUS = 5;
 const textureLoader = new THREE.TextureLoader();
-const texture = textureLoader.load('https://threejs.org/examples/textures/moon.jpg');
+// NASA surface texture
+const texture = textureLoader.load('https://cdn.jsdelivr.net/gh/jeromeetienne/threex.planets@master/images/moonmap1k.jpg');
 const geometry = new THREE.SphereGeometry(RADIUS, 64, 64);
 const material = new THREE.MeshStandardMaterial({ map: texture });
 const moon = new THREE.Mesh(geometry, material);
@@ -112,7 +113,6 @@ button.addEventListener('click', () => {
 
 function animate() {
   requestAnimationFrame(animate);
-  moon.rotation.y += 0.001;
   controls.update();
   renderer.render(scene, camera);
 }

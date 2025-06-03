@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Orbitron', sans-serif;
-  background: #000 url('https://raw.githubusercontent.com/mrdoob/three.js/dev/examples/textures/cube/space/px.jpg') center/cover fixed;
+  background: #000 url('https://threejs.org/examples/textures/starfield.jpg') center/cover fixed;
   color: #fff;
 }
 
